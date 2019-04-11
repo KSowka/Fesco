@@ -1,0 +1,706 @@
+/*------------ global styles ----------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #4c4d4f;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+    font-size: .9rem;
+}
+
+.wrapper {
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+main {
+    position: relative;
+    width: 100%;
+}
+
+section.global {
+    padding: 5em 0;
+}
+
+.col {
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3:nth-child(2) {
+    width: 42.49%;
+}
+
+.col-3:first-child {
+    width: 34%;
+}
+
+.col-3:last-child {
+    width: 23.51%;
+}
+/*
+
+.col-3:not(:last-child) {
+    margin-right: 10%;
+}
+*/
+
+.col-4 {
+    width: 23.5%;
+}
+
+.flexset {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.col-4:not(:last-child) {
+    margin-right: 2%;
+}
+
+article {
+    position: relative;
+}
+
+address {
+    font-style: normal; 
+    color: #a4a4a4;
+    padding: 20px 25px;
+}
+
+address a,
+address a:active{
+    color: #bbb;
+    text-decoration: underline;
+}
+
+address a:hover,
+addres a:visited {
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #bf9e7b;
+    font-weight: 300;
+}
+
+h1 {
+    text-shadow: 0px 3px 3px rgba(0,0,0,.6);
+    font-size: 3.7em;
+    line-height: 3em;
+}
+
+h2 {
+    text-align: center;
+    line-height: 1.6em;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    line-height: 1.4;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+h4 {
+    margin-bottom: 10px;
+}
+
+p {
+    color: #5c5c5c;
+    line-height: 2.5em;
+    font-size: .9rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    color: #fff;
+    background: #bf9e7b;
+    padding: 5px 10px;
+    -webkit-transition: all .25s;
+}
+
+button:hover {
+    background: #fff;
+    color: #444;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* fixing float's effect */
+.clearfix {
+    clear: both;
+}
+
+/* -------------------- medium global styles -------------------- */
+.optional-img_figure,
+.img-box {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section_contact_sm {
+    text-align: left;
+    background: #141723;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.narrow-text {
+    padding: 0 35px;
+}
+
+.white-space {
+     white-space: nowrap;
+}
+
+@media (max-width: 1024px) { 
+    div.banner-container {
+        padding: 5em 0;
+    }
+}
+
+@media (max-width: 768px) {
+    article.col, 
+    table.col, 
+    div.col, 
+    div.col:first-child, 
+    div.col:nth-child(2), 
+    div.col:last-child {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    div.flexset {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    div.flexset > div:not(:last-child) {
+        margin: 0;
+    }
+    
+    div.flexset > div {
+        margin-bottom: 15px !important;
+    }
+    
+    .narrow-text {
+        padding: 0 15px;       
+    }
+    
+    header div.main-logo {
+        top: auto;
+        -webkit-transform: none;
+        transform: none;
+    }
+    
+    header div.main-logo h2 {
+        line-height: 1;
+    }
+    
+    header div.wrapper nav {
+        border-bottom: none;
+    }
+    
+    ul.nav-menu li {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    div.banner-container {
+        padding: 3em 0;
+    }
+    
+    .banner-container > h1 {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+    
+    div.banner-container p {
+        line-height: 1.6;    
+    }
+    
+    section.section_contact_sm address {
+        display: none;
+    }
+    
+    article.narrow-text p {
+        line-height: 2;
+    }
+    
+    .our-specialities_section .col {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+    
+    .our-menu_section table {
+        padding: 0 !important;
+    }
+    
+    .our-specialities_section div.img-box {
+        filter: opacity(1);
+    }
+    
+    figcaption span:last-child {
+        background: #fff !important;
+        color: #444 !important;
+        font-weight: 400;
+        font-size: 1rem !important;
+    }
+    
+    .our-specialities_section span:last-child { 
+        align-self: center !important;
+    }
+    
+    .our-menu_section .icon {
+        display: none;
+    }
+    
+    footer div.col {
+        margin-bottom: 30px;
+    }
+    
+    .col address, 
+    .col ul>li,
+    div.social-media h4,
+    div.social-media p {
+        text-align: center;
+    }
+    
+    a.footer_link-btn,
+    footer div.icon-set {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+/*------------------------- HEADER ------------------------------*/
+
+header {
+    height: 100vh;
+    position: relative;
+    background-image: url('../img/Conference_Buffet_Sample_Menu_Hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header > img {
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+    height: auto;
+    -webkit-filter: blur(2px) opacity(70%);
+    filter: blur(2px) opacity(70%);
+}
+
+/* ---------------- navigation ---------------------- */
+
+header nav {
+    overflow: hidden;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+    padding: 30px 0;
+}
+
+.main-logo {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.main-logo h2 {
+    color: #fff;
+    font-size: 2rem;
+    top: 15px;
+}
+
+.nav-menu {
+    float: right;
+    text-align: right;
+}
+
+.nav-menu li {
+    display: inline-block;
+}
+
+.nav-menu li a {
+    padding: 0 15px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.nav-menu li a:hover {
+    color: #040713;
+    font-weight: 300;
+}
+
+/* ----------------------- banner ----------------------- */
+.banner-container {
+    position: relative;
+    padding: 10rem 0 11rem;
+}
+
+h2.banner-sm-heading {
+    text-align: left;
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+.banner-container p {
+    color: #fff;
+    font-weight: 300;
+    line-height: 1em;
+    font-size: .8rem;
+    text-align: left;
+}
+
+/* MAIN */
+
+/*---------------------- about us --------------------------------*/
+.about-us_section {
+    background: #eee;
+}
+
+.about-us_section figure {
+    min-height: 450px;
+    width: 100%;
+    background: url(../img/Global_Gourmet_FoodBev_corp.jpg) no-repeat center;
+}
+
+.about-us_section section {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -90%;
+}
+
+/* --------------------- our specialities ---------------------------*/
+.our-specialities_section h2 {
+    color: #fff;
+}
+
+.our-specialities_section p {
+    color: #a4a4a4;
+    margin-bottom: 4em;
+}
+
+.our-specialities_section .col {
+    background: #fff;
+}
+
+.our-specialities_section figure {
+    height: 250px;
+    background: #131723;
+}
+
+.our-specialities_section .img-box {
+    height: 80%;
+    background-size: cover;
+    filter: opacity(.7);
+    transition: all .25s;
+}
+
+.our-specialities_section figcaption {
+    background: #fff;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.our-specialities_section .img-box:hover {
+    filter: opacity(1);
+} 
+
+.img-1 {
+    background: url('../img/Green_Delta_Asparagus_with_Royal_Trumpet_Mushrooms__Thyme-Scented_Cippolini__Frisee__Gribiche.jpg');
+}
+
+.img-2 {
+    background: url('../img/WildMushroomMiniPlateWeb.png');
+}
+
+.img-3 {
+    background: url('../img/Marinated_Porcini_Mushroom_Salad.jpg')
+}
+
+.img-4 {
+    background: url('../img/Global_Gourmet_about_hero.jpg');
+}
+
+.our-specialities_section span {
+    padding: 5px 10px;
+    color: #bf9e7b;
+    font-size: .8rem;
+    line-height: 1.3;
+}
+
+.our-specialities_section span:last-child {
+    align-self: flex-end;
+    background: #131723;
+    color: #eee;
+}
+
+/* ---------------------- our menu ------------------------*/
+.our-menu_section {
+    background: #141723;
+}
+
+.our-menu_section p {
+    margin-bottom: 20px;
+}
+
+.price-list {
+    margin-bottom: 25px;
+}
+
+.our-menu_section table:first-child {
+    padding-right: 10px;
+}
+
+.our-menu_section table:last-child {
+    padding-left: 10px;
+}
+
+.our-menu_section tr {
+    margin-bottom: 25px;
+}
+
+.our-menu_section h4 {
+    margin-bottom: 0;
+}
+
+.our-menu_section td:last-child {
+    text-align: center;
+}
+
+.our-menu_section td {
+    color: #fff;
+    font-weight: 100;
+    line-height: 1.4;
+}
+
+.our-menu_section td.price {
+    width: 100px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    vertical-align: bottom;
+    color: #bf9e7b;
+    position: relative;
+}
+
+.our-menu_section .price-item {
+    position: relative;
+    z-index: 1;
+}
+
+.our-menu_section .icon {
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 50%;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.fa-search-plus {
+    color: #fff;
+    font-size: 12px;
+}
+
+.our-menu_section .hover-box {
+    position: absolute;
+    width: 150px;
+    display: none;
+    padding: 8px 10px;
+    background: #fff;
+    font-size: .7rem;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #252525;
+}
+
+.fa-search-plus:hover {
+    color: #bf9e7b;
+}
+
+.our-menu_section .icon:hover > .hover-box {
+    display: block;
+    z-index: 2;
+}
+
+tr > td {
+    padding-bottom: 25px;
+}
+
+.our-menu_section button {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 25px;
+}
+
+/*---------------------- booking section -----------------------------*/
+.booking_section {
+    background: #bf9e7b;
+}
+
+.booking_section h2 {
+    color: #fff;
+}
+
+.booking_section p {
+    color: #111;
+    margin-bottom: 3.5em;
+}
+
+.flexset {
+    margin-bottom: 2em;
+}
+
+.flexset div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.booking_section label {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+input, select {
+    min-width: 200px;
+    min-height: 60px;
+    padding: 0 20px;
+    border: 0;
+}
+
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+}
+
+
+.submit-btn {
+    display: block;
+    margin: 0 auto;
+    background: #131723;
+    cursor: pointer;
+    padding: 15px 25px;
+}
+
+/* --------------------------- footer ------------------------------ */
+footer {
+    background: #141723;
+    padding: 3em 0;
+}
+
+footer h4 {
+    font-size: .8rem;
+}
+
+footer .col.col-3 {
+    vertical-align: top;
+    min-height: 130px;
+    position: relative;
+}
+
+footer p,
+footer li,
+footer address {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    line-height: 1.3;
+    font-weight: 300;
+    font-size: .8rem;
+    color: #ddd;
+}
+
+.footer_link-btn,
+footer a.icon {
+    display: inline-block;
+    -webkit-transition: all .25s;    
+    transition: all .25s;    
+}
+
+.footer_link-btn:hover,
+.footer_link-btn:active,
+footer a.icon:hover,
+footer a.icon:active {
+    border: 1px solid #fff;
+    background: #030612;
+}
+
+
+footer a {
+    padding: 1em 2em;
+    text-align: center;
+    border: 1px solid #bf9e7b;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_link-btn,
+footer .icon-set {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+footer a.icon {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0;
+    height: 35px;
+    width: 35px;
+}
+
+footer a.icon i {
+    margin-top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #fff;
+}
